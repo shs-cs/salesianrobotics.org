@@ -29,7 +29,13 @@ header ul {
 	align-items: center;
 }
 
-head ul li {
+header ul li {
 	list-style:circle;
 	margin-left: 20px;
+}
+
+header ul li a {
+	text-decoration: underline;
+	padding: 6px 15px;
+	color: blue;
 }
