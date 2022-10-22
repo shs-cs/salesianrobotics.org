@@ -30,12 +30,12 @@ header ul {
 }
 
 header ul li {
-	list-style:circle;
+	list-style:none;
 	margin-left: 20px;
 }
 
 header ul li a {
-	text-decoration: underline;
+	text-decoration: none;
 	padding: 6px 15px;
 	color: blue;
 }
