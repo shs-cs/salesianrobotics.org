@@ -1,6 +1,7 @@
 body {
-	background-image: image("./images/footer");
+	background-image:url("https://www.salesianhigh.org/pics/footer_logo.png");
 	min-height: 100wh;
+
 }
 
 header {
