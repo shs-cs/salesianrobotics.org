@@ -26,12 +26,12 @@ header .logo {
 
 header ul {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content:left;
+	align-items:center;
 }
 
 header ul li {
-	list-style:none;
+	list-style:circle;
 	margin-left: 10px;
 }
 
@@ -40,6 +40,6 @@ header ul li a {
 	padding: 6px 15px;
 	color: blue;
 	text-decoration: double;
-	border-style: dotted;
+	border-style:ridge;
 }
 
