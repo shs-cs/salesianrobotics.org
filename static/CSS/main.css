@@ -44,10 +44,10 @@ header ul li a {
 	text-decoration: double;
 	border-style:ridge;
 }
-
-.intro-section {
-	font-weight: 10;
+intro {
+	top: 5;
+	right: 0;
+	display:contents;
 	position: relative;
-	
 }
 
