@@ -3,6 +3,7 @@ body {
 	min-height: 100wh;
 	background-color:slategray;
 	background-image: url("/static/images/background.jpg");
+	background-size: cover;
 }
 
 header {
