@@ -43,7 +43,7 @@ header ul li a {
 	border-style:ridge;
 }
 
-intro {
+.intro {
 	font-weight: 10;
 	position: relative;
 }
