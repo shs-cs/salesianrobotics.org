@@ -15,7 +15,7 @@ header {
 	align-items: left;
 }
 
-header .logo {
+header .ul .logo {
 	color: white;
 	font-weight: 10;
 	text-decoration: none;
