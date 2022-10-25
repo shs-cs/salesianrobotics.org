@@ -2,6 +2,7 @@ body {
 	background: fixed;
 	min-height: 100wh;
 	background-color:slategray;
+	background-image: url("/static/images/background.jpg");
 }
 
 header {
@@ -46,5 +47,6 @@ header ul li a {
 .intro {
 	font-weight: 10;
 	position: relative;
+	
 }
 
