@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #750303;
+	--secondary-color: #fa8f44;
+	--tertiary-color: #845508;
+	--text-color: #172317;
+	--bg-color: #fff;
+	--creamsmoke: #f1f1ff;
+	--hover-color: #f44336;
+
+}
+
+
 body {
 	background: fixed;
 	min-height: 100wh;
@@ -6,49 +26,137 @@ body {
 	background-size: cover;
 }
 
+
+html {
+	overflow-x: hidden;
+	background-color: whitesmoke;
+}
+
 header {
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 30px 70px;
+	height: 80vh;
+	background-image: url("/static/images/footer_logo.png");
+	background-position: center;
+	background-size: cover;
+}
+
+nav {
 	display: flex;
 	justify-content: space-between;
-	align-items: left;
+	margin-left: 20px;
 }
 
-header .logo {
-	color: white;
-	font-weight: 10;
+.icon {
+	text-align: center;
+	color: var(--secondary-color);
+	padding-left: 20px;
+}
+
+.logo {
+	margin-top: 20px;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.nav-links {
+	margin-top: 20px;
+}
+
+.nav-links li {
+	display: inline-block;
+	list-style: none;
+}
+
+.nav-links li a {
+	color: var(--secondary-color);
+	font-size: 1rem;
+	font-weight: 500;
 	text-decoration: none;
-	font-size: 2em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	padding: 20px;
 }
 
-header ul {
-	display: flex;
-	justify-content:left;
-	align-items:center;
+.nav-links .hover::after {
+	content:'';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.9s ease-in;
 }
 
-header ul li {
-	list-style:circle;
-	margin-left: 10px;
+.nav-links .hover:hover:after {
+	width:  60%;
 }
 
-header ul li a {
-	text-decoration: none;
-	padding: 6px 15px;
-	color: blue;
-	text-decoration: double;
-	border-style:ridge;
-}
-intro {
-	top: 5;
-	right: 0;
-	display:contents;
-	position: relative;
-	color: white;
+.header-content {
+	margin-top: 150px;
+	margin-left: 160px;
+	width: 50%;
 }
 
+.header-title {
+	font-size: 2.3rem;
+	color: var(--secondary-color);
+	text-align: center;
+}
+
+.slider-box h3 {
+	text-align: center;
+	padding: 10px;
+	font-size: 1.4rem;
+	color: var(--secondary-color);
+	margin-top: 48px;
+}
+
+.slider-box p {
+	padding: 10px;
+	color: var(--text-color);
+	font-size: 0.9rem;
+}
+
+.hover::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: var(--hover-color);
+	display: block;
+	margin: auto;
+	transition: 0.9s ease-in;
+}
+
+.slider {
+	box-sizing: border-box;
+	animation: slider 30s linear infinite;
+}
+
+.slider-box {
+	border-radius: 5px;
+	background: var(--creamsmoke);
+	height: auto;
+	width: auto;
+}
+
+@keyframes slider {
+	0% { margin-top: -800px; }
+	5% { margin-top: -400px; }
+	30%{ margin-top: 400px;}
+	35% {margin-top: 0px;}
+	65%{margin-top: 0px;}
+	70%{margin-top: 400px;}
+	100%{margin-top: .400px;}
+}
+
+.hover:hover:after {
+	width: 60%;
+}
+
+/* Main Body Section in which we will design the website */
+main {
+	width: 90;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 60px;
+}
