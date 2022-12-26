@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="static/CSS/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="canonical" href="https://www.salesianrobotics.com"/>
     <link rel="og:canonical" href="https://www.salesianrobotics.com"/>
     <!-- SEO FUNCTIONS (Seach Engine Optimaztion)-->
@@ -96,63 +97,75 @@
       </div>
     </div>
 
-    <div class="hero-catologue">
-      <div class="row">
-        <div class="col-md-9">
-          <h1>Eagle One, Team 18759</h1>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="hero-box">
-                <img src="/static/images/Salesian Eagle One Robot.jpg" alt="Eagle One #1">
-                <h1>Eagle One in its idle state</h1>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="hero-box">
-                <img src="/static/images/PrebultState1.jpg" alt="Eagle One #2">
-                <h1>Eagle One in its building stage in the Computer Lab</h1>
+    <section>
+      <div class="sponsors">
+        <h1>Sponsorships</h1>
+        <p> {{ sponsor_message }}</p>
+      </div>
+    </section>
+
+    <!--Footer section-->
+    <footer>
+      <div class="footer-header">
+        <h1>Salesian Robotics</h1>
+        <p>Eagles united, we sour to inspire and young men into the field of engineering</p>
+
+        <div class="container">
+          <img src="static/images/footer_logo.png" alt="" class="footer-img">
+          <img src="static/images/footer_logo.png" alt="" class="footer-img">
+          <img src="static/images/footer_logo.png" alt="" class="footer-img">
+          <img src="static/images/footer_logo.png" alt="" class="footer-img">
+          <img src="static/images/footer_logo.png" alt="" class="footer-img">
+        </div>
+      </div>
+
+      <div class="sub-header">
+        <h2>About Salesian Robotics</h2>
+        <p>We are a school from Salesian High School which focuses on the Engineering part which is Robotics. There are two Teams in which one comprises of Freshmen and Sophmores and other of Juniors & Seniors</p>
+      </div>
+
+      <div class="footer-carousel">
+        <div class="row">
+          <div class="col-md-3">
+            <h1>Social Media</h1>
+            <div class="share">
+              <span class="share-title">Contact Us Via Social Media</span>
+              <div class="social">
+                <a href="https://www.instagram.com/salesianeagles/"><i class="bx bxl-instagram"></i></a>
+                <a href="https://twitter.com/SalesianHS"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/SalesianHS"><i class="bx bxl-facebook"></i></a>
+                <a href="robotics@salesianhigh.org "><i class="bx bxl-gmail"></i></a>
               </div>
             </div>
           </div>
-          <h1>Eagle Two, Team 18760</h1>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="hero-box">
-                <img src="/static/images/Salesian Eagle One Robot.jpg" alt="Eagle One #1">
-                <h1>Eagle One in its idle state</h1>
-              </div>
+          <div class="col-md-3">
+            <h1>Available Links</h1>
+            <div class="footer-links">
+              <li class="footer-hover"><a href="https://codehs.com/">Learn Java</a></li>
+              <li class="footer-hover"><a href="https://www.firstinspires.org/robotics/ftc">FTC Website</a></li>
+              <li class="footer-hover"><a href="https://discord.gg/first-tech-challenge">FTC Discord Server</a></li>
+              <li class="footer-hover"><a href="https://help.autodesk.com/view/fusion360/ENU/courses/">Learn 3D Modelling</a></li>
             </div>
-            <div class="col-md-3">
-              <div class="hero-box">
-                <img src="/static/images/PrebultState1.jpg" alt="Eagle One #2">
-                <h1>Eagle One in its building stage in the Computer Lab</h1>
-              </div>
+          </div>
+          <div class="col-md-3">
+            <h1>Menu</h1>
+            <div class="footer-links">
+              <li class="footer-hover"><a href="#">Home Page</a></li>
+              <li class="footer-hover"><a href="{{ url_for('about') }}">About Us</a></li>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="description">
+        <h1>Salesian Robotics</h1>
+        <p>
+          148 E Main Street, New Rochelle, New York | Email: robotics@salesianhigh.org | Copyright © Salesian Robotics 2021-2022 | All Rights Reserved |
+        </p>
+      </div>
+    </footer>
+    
+
   </main>
   
 </body>
-
-
-<!--
-section {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	padding: 100px;
-}
-
-section img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-
--->
