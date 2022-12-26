@@ -20,11 +20,11 @@ As we compete in various robotics competitions, working towards success, we will
 
 Thank you again for your thoughtful and generous gift.
 
- - On behalf of the Salesian Robotics Teams
+ \n- On behalf of the Salesian Robotics Teams
     
     """
     
-    return render_template("/index.html",sponsor_message=message_to_sponser)
+    return render_template("index.html",sponsor_message=message_to_sponser)
 
 
 @app.route('/about')
@@ -32,7 +32,7 @@ async def about():
       """
       This is for the about us page
         """
-      return render_template("templates/about.html")
+      return render_template("about.html")
 
 
 
