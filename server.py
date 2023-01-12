@@ -1,16 +1,20 @@
 import flask
 from flask import Flask, render_template
+import os
+
+directory = os.getcwd()
+print(directory)
 
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder=directory)
 
 
-@app.route('/')
+@app.route('/home')
 async def home():
     """
     This is function handles the file for the main homepage `index.html`.
     """
-    
+    print(directory)
     message_to_sponser = """
     Dear Boeing & DCE,
 
@@ -29,10 +33,16 @@ Thank you again for your thoughtful and generous gift.
 
 @app.route('/about')
 async def about():
-      """
-      This is for the about us page
-        """
-      return render_template("about.html")
+  """
+  This is for the about us page
+  """
+  return render_template("about.html")
+
+@app.route('/events')
+async def events():
+  """
+  """
+  return render_template('events.html')
 
 
 

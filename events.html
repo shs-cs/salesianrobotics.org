@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="static/CSS/events.css">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	</head>
+	
+	<body>
+
+		<header>
+			<nav>
+				<div class="icon">
+				  <img src="/static/images/footer_logo.png" class="logo">
+				</div>
+				<ul class="nav-links">
+				  <li class="hover"><a href="{{ url_for('home') }}">Home</a></li>
+				  <li class="hover"><a href="{{ url_for('about') }}">About</a></li>
+				  <li class="active"><a href="{{ url_for('events') }}">Events</a></li>
+				</ul>
+			  </nav>
+			  
+			  <div class="header-content">
+				<div class="row">
+				  <div class="col-lg-6">
+					<h1 class="header-title">View our ubcoming events!</h1>
+				  </div>
+				  
+				  
+		</header>
+		<!--Events Data-->
+
+		<main>
+			<div class="event-list">
+				<div class="row">
+					<div class="container">
+						<!--<img src="https://png.pngtree.com/png-vector/20190307/ourmid/pngtree-vector-business-calendar-icon-png-image_755669.jpg">-->
+						<p id="event-name">Event Name: FTC Robotics Qualifier at Peekskil H.S. at 1072 Elm St, Peekskil , NY 10566</p>
+						<p id="event-date">Date: 01/14/2023</p>
+						<p id="event-description">Description: Official match that determines if we qualify.</p>
+					</div>
+	
+				</div>
+			</div>
+		</main>
+
+	</body>
+</html>
